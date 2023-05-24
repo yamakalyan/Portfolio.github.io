@@ -1,0 +1,50 @@
+.project{
+    height: auto;
+    // scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .project-content{
+        width: 1400px;
+       
+        h1{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .list-projects{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 25px 0;
+            gap: 25px;
+            .list{
+                border-radius: 10px;
+                border: 2px solid rgb(249, 249, 251);
+                padding: 20px;
+                flex: 1 250px;
+                margin: 20px;
+                background: linear-gradient(90deg, rgb(136, 136, 181), rgb(28, 37, 114));
+                background-size: 400% 400%;
+                animation: change 2s infinite ease-in-out;
+                // transition: 2s;
+
+                p{
+                    font-style: italic;
+                }
+
+                @keyframes change {
+                    0%{
+                        background-position: 0% 50%;
+                    }
+                    50%{
+                        background-position: 100 50%;
+                    }
+                    100%{
+                        background-position: 0 50%;
+                    }
+                }
+            }
+        }
+    }
+}

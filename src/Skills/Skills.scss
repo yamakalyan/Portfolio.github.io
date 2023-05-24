@@ -1,0 +1,45 @@
+.skill{
+    height: auto;
+    margin: 5% 0;
+    // scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .skills-content{
+        width: 1400px;
+    
+        .skills-heading{
+            text-align: center;
+        }
+
+      .skills-manage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: auto;
+
+            @media only screen and (min-width : 768px){
+                ul{
+                    columns: auto;
+                    width: 100%;
+                }
+            }
+
+            li{
+                padding: 15px;
+                margin: 15px;
+                border: 2px solid rgb(245, 157, 157);
+                border-radius: 10px;
+                
+            }
+        }
+      }
+    }
+}
