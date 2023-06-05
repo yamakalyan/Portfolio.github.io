@@ -9,22 +9,38 @@ export default function Home() {
   return (
     <section className="home" id="home">
       <div className="home-content">
-        <div className="left">
-          <div className="left-headings">
-            <h1>Yama Kalyan</h1>
-            <p>web devoloper</p>
+      <div className="home-img ">
+        <img  src="kn2.JPG" alt=""/>
+        <div className="links">
+        <div className="headings">
+            <h2>Yama Kalyan</h2>
+            <div className="animation-text">
+            <span className="im-text">Im a </span>
+            <span className="dev-text">Full-stack Devoloper</span>
+            </div>
           </div>
-          <div className="links">
-        <span><GrInstagram/></span>
-        <span><BsWhatsapp/></span>
+          <div>
+
+          <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/beautifulmind_00?igshid=NGExMmI2YTkyZg==">
+          <span><GrInstagram/></span>
+          </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://wa.me/9550049382">
+          <span><BsWhatsapp/></span>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/yamakalyan">
         <span><BsGithub/></span>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/yama-kalyan-821360266">
         <span><GrLinkedin/></span>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="mailto:yamakalyan6@gmail.com">
         <span><TfiEmail/></span>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="tel:9550049382">
         <span><FaMobileAlt/></span>
+          </a>
           </div>
-        </div>
-        <div className="right">
-          <img  src="kn.JPG" width="450px"/>
+          </div>
         </div>
       </div>
     </section>

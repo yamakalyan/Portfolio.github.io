@@ -15,7 +15,8 @@ export default function Skills() {
             <li>REACT.JS</li>
             <li>NODE.JS</li>
             <li>EXPRESS.JS</li>
-            <li>MYSQL, PHPMYADMIN</li>
+            <li>GitHub</li>
+            <li>MYSQL</li>
             <li>MongoDb</li>
           </ul>
         </div>

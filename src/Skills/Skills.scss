@@ -8,7 +8,7 @@
 
 
     .skills-content{
-        width: 1400px;
+        max-width: 1400px;
     
         .skills-heading{
             text-align: center;
@@ -23,21 +23,24 @@
             list-style: none;
             display: flex;
             flex-wrap: wrap;
-            flex-grow: auto;
-
-            @media only screen and (min-width : 768px){
-                ul{
-                    columns: auto;
-                    width: 100%;
-                }
-            }
+            flex: auto;
+            margin-right: 45px;
 
             li{
+                text-align: center;
                 padding: 15px;
-                margin: 15px;
-                border: 2px solid rgb(245, 157, 157);
+                margin: 15px ;
+                // border: 2px solid rgb(245, 157, 157);
                 border-radius: 10px;
-                
+                border-width: 3px;
+                border-style: solid;
+                flex: 2 80px;
+                border-image: linear-gradient(90deg, rgb(237, 176, 176), rgb(163, 163, 250))1;
+
+                &:hover{
+                border-image: linear-gradient(90deg, rgb(245, 126, 126), rgb(100, 100, 231))1;
+                box-shadow: 0px 1px 1px 0px;                
+                }
             }
         }
       }

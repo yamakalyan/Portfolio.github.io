@@ -1,43 +1,164 @@
 .home {
-  height:  auto;
-  margin: 5% 0;
-  // scroll-snap-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   .home-content {
-    width: 1400px;
     display: flex;
     flex-wrap: wrap;
-    flex-grow: auto;
-    flex-shrink: auto;
-    .left{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex: 1;
-      margin: 20px;
-      .left-headings{
-        h1{
-          font-size: 45px;
-        }
-        p{
-          font-size: 25px;
-          font-style: italic;
-        }
-      }
-      .links{
-        span{
-          margin: 15px;
-          font-size: 25px;
-        }
-      }
-    }
-    .right{
-      flex: 1;
-    }
+    justify-content: center;
+    align-items: center;
+    // margin: 3%;
 
-   
+    .home-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      max-width: 1400px;
+
+      img {
+        max-width: 100%;
+        // object-fit: contain;
+        height: auto;
+        opacity: 30%;
+      }
+      .links {
+        position: absolute; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .headings {
+          // margin: 10px;
+          // text-align: center;
+          margin-bottom: 10px;
+          @media only screen and (max-width : 768px) {
+            margin-left: 30px;
+            
+          }
+          
+  
+
+          h2 {
+            font-size: 55px;
+            letter-spacing: 10px;
+            font-weight: bold;
+            &:hover{
+              background-image: linear-gradient(to right, rgb(223, 67, 67), rgb(95, 95, 230));
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+              transition: 0.3s;
+            }
+            // position: relative;
+            margin: 0;
+            // padding: 5px;
+            color: rgb(23, 22, 22);
+            // -webkit-text-stroke: 0.2vw rgb(248, 135, 135);
+            text-transform: uppercase;
+            // &::before{
+            //   content: "Yama_kalyan.";
+            //   position: absolute;
+            //   top: 0%;
+            //   left: 0%;
+            //   width: 0%;
+            //   height: 100%;
+            //   color: black;
+            // -webkit-text-stroke: 0vw rgb(220, 220, 234);
+            //   border-right: 3px solid rgb(28, 30, 28);
+            //   overflow: hidden;
+            //   animation: textS 6s linear infinite;
+            // }
+            // @keyframes paraText {
+            //   0%{
+            //     width: 0;
+            //   }
+            //   10%{
+            //     width: 0;
+            //   }
+            //   100%{
+            //     width: 0;
+            //   }
+            //   70%{
+            //     width: 100%;
+            //   }
+            //   90%{
+            //     width: 100%;
+            //   }
+            // }
+          }
+
+          .animation-text {
+            margin: 15px;
+            // display: inline-flex;
+            // justify-content: center;
+            // align-items: center;
+
+            .im-text {
+              letter-spacing: 2px;
+              font-size: 25px;
+              font-weight: bold;
+              margin: auto;
+            }
+
+            .dev-text {
+              font-size: 25px;
+              font-weight: bold;
+              margin: 0;
+              font-style: italic;
+              color: transparent;
+              position: relative;
+
+              &::before {
+                content: "Full-stack Devoloper..";
+                top: 0%;
+                left: 0%;
+                border-right: 3px solid;
+                white-space: nowrap;
+                width: 0%;
+                height: 100%;
+                color: rgb(249, 92, 92);
+                margin: auto;
+                position: absolute;
+                overflow: hidden;
+                animation: typing 3s steps(10) infinite , cursor .4s step-end infinite alternate;
+              }
+              @keyframes cursor {
+                50%{
+                  border-color: transparent;
+                }
+              }
+              @keyframes typing {
+                0%{
+                  width: 0;
+                }
+                10%{
+                  width: 0;
+                }
+                100%{
+                  width: 0;
+                }
+                70%{
+                  width: 100%;
+                }
+                90%{
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        a{
+          margin: 15px;
+          span {
+            padding: 5px;
+            font-size: 25px;
+            color: rgb(12, 12, 12);
+
+            &:hover{
+              color: rgb(102, 140, 247);
+              transition: .3s;
+            }
+          }
+        }
+      }
+    }
   }
 }
