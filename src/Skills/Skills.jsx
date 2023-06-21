@@ -3,7 +3,7 @@ export default function Skills() {
   return (
     <div className="skill" id="skills">
       <div className="skills-content">
-        <h1 className="skills-heading">Skills</h1>
+        <h1 className="skills-heading">Technical Skills</h1>
         <hr />
         <div className="skills-manage">
           <ul>
@@ -16,6 +16,7 @@ export default function Skills() {
             <li>NODE.JS</li>
             <li>EXPRESS.JS</li>
             <li>GitHub</li>
+            <li>SQL</li>
             <li>MYSQL</li>
             <li>MongoDb</li>
           </ul>

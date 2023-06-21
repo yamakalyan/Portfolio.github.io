@@ -7,12 +7,12 @@ header{
     position: sticky;
     z-index: 1;
     top: 0%;
+    height: 70px;
     margin: 0%;
+    background: rgb(22, 22, 23);
 
     .header{
-        height: 70px;
         width: 1400px;
-        background-color: rgb(22, 22, 23);
         color: rgb(246, 232, 232);
         display: flex;
         justify-content: space-between;
@@ -21,6 +21,8 @@ header{
         
         .logo{
             margin-left: 2rem;
+            font-family: 'Bangers', cursive;
+                letter-spacing: 5px;
             span{
                 font-size: 30px;
                 font-weight: bold;
@@ -56,14 +58,15 @@ header{
                 }
                 .btn-hireme{
                     padding: 10px;
-                    border: none;
+                    border: 2px solid rgb(166, 91, 237);
+                    background: transparent;
                     border-radius: 3px;
-                    background-color: #9df3f9;
-                    color: rgb(54, 50, 50);
+                    color: rgb(166, 91, 237);
                     font-weight: bold;
 
                     &:hover{
-                        background: #47c4cd;
+                        background: rgb(166, 91, 237);
+                        color: white;
                     }
                     @media only screen and (max-width:768px) {
                        

@@ -16,15 +16,17 @@ export default function Navbar() {
   <>
 <header>
   <div className='header'>
-      <div className="logo"><span>Yama Kalyan</span></div>
+      <div className="logo"><span>KN<span style={{color : "green"}}>.</span></span></div>
   <nav className='navbar'>
       <ul className="ul">
         <li className='list'><a href='#home' >Home</a></li>
+        <li className='list'><a href='#services' >Services</a></li>
         <li className='list'><a href='#about' >About</a></li>
         <li className='list'><a href='#skills' >Skills</a></li>
         <li className='list'><a href='#projects' >Projects</a></li>
+        <li className='list'><a href='#resume' >Resume</a></li>
         <li className='list'><a href='#contact' >Contact</a></li>
-        <li className='list'><button className='btn-hireme' onClick={()=>window.location.href = "tel:9550049382"}>Hire me ?</button></li>
+        <li className='list'><button className='btn-hireme' onClick={()=>window.location.href = "#contact"}>Hire me ?</button></li>
       </ul>
   </nav>
   </div>

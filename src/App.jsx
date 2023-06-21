@@ -7,6 +7,8 @@ import Skills from "./Skills/Skills";
 import "./App.scss";
 import ScrollTopBtn from "./ScrollTop/ScrollTopBtn";
 import { useEffect, useState } from "react";
+import Resume from "./Resume/Resume";
+import Services from "./Services/Services";
 
 function App() {
    
@@ -17,12 +19,13 @@ function App() {
 
     const scroll = document.documentElement.scrollTop
 
-    if (scroll > 500) {
+    if (scroll > 1000) {
       setBgColor(true)
-      if (scroll > 2300) {
+      if (scroll > 3000) {
         setBgColor(false)
       }
-    } else if(scroll < 300){
+    }
+     else if(scroll < 1000){
       setBgColor(false)
     }
   }
@@ -32,7 +35,7 @@ function App() {
       document.body.style.background = "black"
       document.body.style.color = "white"
       document.body.style.scrollBehavior = "smooth"
-      document.body.style.transition = "1s"
+      document.body.style.transition = "0.5s"
     } else {
       document.body.style.background = "white"
       document.body.style.color = "black"
@@ -46,10 +49,12 @@ function App() {
   return (
     <>
         <Navbar />
-        <Home />
+        <Home colorChange={bgColor} />
+        <Services/>
         <About />
         <Skills />
         <Project />
+        <Resume/>
         <Contact />
         <ScrollTopBtn />
     </>

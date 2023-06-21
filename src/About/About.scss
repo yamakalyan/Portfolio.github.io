@@ -15,6 +15,13 @@
         .about-heading{
             text-align: center;
             margin: 0 5px ;
+            h1{
+                font-family: 'Bangers', cursive;
+                letter-spacing: 1px;
+            font-weight: 200;
+
+
+            }
 
             p{
                 font-size: 16px;
@@ -33,7 +40,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                flex: 1;
+                flex: 1 150px;
                 margin: 30px;
                 img{
                     max-width: 100%;
@@ -45,27 +52,45 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                flex: 1;
-                .info-h4{
-                    font-size: 25px;
-                }
-                .about-ul{
-                    list-style: none;
+                flex: 2 ;
+                .heading{
                     display: flex;
+                    justify-content: left;
                     flex-direction: column;
+                    .info-h4{
+                        font-size: 25px;
+                    }
+                }
+
+                .about-row{
+                    display: flex;
+                    justify-content: space-between;
                     flex-wrap: wrap;
-                    margin: 5px;
-                    max-width: 100%;
-    
-                    li{
-                        font-size: 20px;
-                        letter-spacing: 1px;
-                        margin: 10px;
+                    .about-ul{
+                        // list-style: none;
+                        list-style-type: circle;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        margin: 5px;
+                        max-width: 100%;
+        
+                        li{
+                            font-size: 20px;
+                            letter-spacing: 1px;
+                            margin: 10px;
+
+                        }
+                        .arrow{
+                            transform: rotateX('80deg');
+                            color: red;
+                        }
                     }
                 }
                 .about-bottom{
                     font-size: 20px;
-                    color: rgb(220, 214, 214);
+                    color : rgb(162, 255, 162);
+                    text-align: center;
                 }
             }
         }

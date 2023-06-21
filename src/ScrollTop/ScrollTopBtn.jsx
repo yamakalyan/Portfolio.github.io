@@ -1,6 +1,6 @@
 import { useState } from "react"
 import "../ScrollTop/ScroolBtn.scss"
-import {BiArrowToTop} from "react-icons/bi"
+
 export default function ScrollTopBtn() {
     const [active, setActive] = useState(false)
 
@@ -22,7 +22,7 @@ export default function ScrollTopBtn() {
     window.addEventListener("scroll", handleBtn)
   return (
     <div>
-      <button onClick={scrollToTopaction} className="btn-scroll" style={{display : active ? "inline" : "none", bottom : "8%", borderRadius : "40%", fontSize : "22px"}}><BiArrowToTop/></button>
+      <button onClick={scrollToTopaction} className="btn-scroll" style={{display : active ? "inline" : "none"}}><i className="bi bi-arrow-up-circle"></i></button>
     </div>
   )
 }

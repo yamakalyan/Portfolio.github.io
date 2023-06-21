@@ -11,6 +11,10 @@
         h1{
             text-align: center;
             margin-bottom: 25px;
+            // color: rgb(162, 73, 245);
+            font-family: 'Bangers', cursive;
+            letter-spacing: 1px;
+            font-weight: 200;
         }
 
         .list-projects{
@@ -22,7 +26,7 @@
                 text-align: center;
                 border-radius: 10px;
                 padding: 20px;
-                flex: 1 270px;
+                flex: 1 200px;
                 margin: 20px;
                 background-color: rgb(69, 69, 72);
                 // background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255,255, 0));

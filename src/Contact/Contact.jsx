@@ -42,23 +42,22 @@ export default function Contact() {
         <div className="personal">
           {/* <h1><FaLocationCrosshairs /></h1> */}
           <div className="personal-info">
-          <h2>Present location :</h2>
+          <h2><span><i className="bi bi-geo-fill"></i></span> Location :</h2>
           <p className="text">3-6-497, Near brand factory, Himayat nagar, Hyderabad, TS, India, 500029.</p>
           </div>
         </div>
         <div className="personal">
           {/* <h1><GrLocation/></h1> */}
           <div className="personal-info">
-          <h2>Permanent Address :</h2>
-          <p className="text">6-1, Sunket, Morthad, Nizamabad, TS, India, 503225.</p>
+          <h2><span><i className="bi bi-envelope-at"></i></span> Email :</h2>
+          <p className="text"><a href="mailto:yamakalyan6@gmail.com">yamakalyan6@gmail.com</a></p>
           </div>
         </div>
         <div className="personal">
           {/* <h1><GrLocation/></h1> */}
           <div className="personal-info">
-          <h2>Email & Mobile :</h2>
-          <p className="text">yamakalyan6@gmail.com</p>
-          <p className="text">+91 9550049382</p>
+          <h2><span><i className="bi bi-phone"></i></span> Mobile :</h2>
+          <p className="text"><a href="tel:+91 9550049382">+91 9550049382</a></p>
           </div>
         </div>
         </div>
@@ -66,21 +65,21 @@ export default function Contact() {
       </div>
       <form onSubmit={handleEmailCall}>
         <div className="forms">
-        <div  className="mobile">
-            <label>Enter your name</label><br/><br/>
+        <div  className="email">
+            {/* <label>Enter your name</label><br/><br/> */}
       <input type="text" size="40" onChange={(e)=>setName(e.target.value)} required placeholder="Enter your name"/>
           </div>
         <div  className="email">
-            <label>Enter your Mobile</label><br/><br/>
+            {/* <label>Enter your Mobile</label><br/><br/> */}
       <input type="text" size="40" onChange={(e)=>setMobile(e.target.value)} required placeholder="Enter your mobile"/>
           </div>
         <div  className="email">
-            <label>Enter your Email </label><br/><br/>
+            {/* <label>Enter your Email </label><br/><br/> */}
       <input type="email" size="40" onChange={(e)=>setEmail(e.target.value)} required placeholder="Enter your @gmail"/>
           </div>
     
           <div  className="textarea">
-          <label>Enter Message</label><br/><br/>
+          {/* <label>Enter Message</label><br/><br/> */}
       <textarea type="text" cols="40" rows="8" required onChange={(e)=>setMessage(e.target.value)} placeholder="Enter your message here"/>
           </div>
           <div className="btn-div">

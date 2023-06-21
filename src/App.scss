@@ -1,16 +1,19 @@
 :root {
     --color-default: #222222;
-    --color-primary: #808ab6;
+    --color-primary: #1d46ff;
     --color-secondary: #f85a40;
   }
 
 body{
     margin: 0px;
     padding: 0px;
-    font-family: 'Questrial', sans-serif;
+    // font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     scroll-behavior: smooth;
     width: 100vw;
+    background: linear-gradient( rgb(193, 193, 255)0%, rgb(162, 255, 162)100%);
+
     a{
         color: white;
         text-decoration: none;
@@ -31,7 +34,7 @@ body{
     inset: 0;
     z-index: 999999;
     overflow: hidden;
-    background: #fff;
+    background: #262626;
     transition: all 0.6s ease-out;
 
       

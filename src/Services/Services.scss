@@ -1,0 +1,82 @@
+#services{
+    // height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        max-width: 1400px;
+        flex: 1;
+
+        .heading{
+            text-align: center;
+            font-family: 'Bangers', cursive;
+            font-weight: 200;
+        }
+        .services-row{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .content{
+                flex: 1 300px;
+                // border-image: linear-gradient(90deg, blue, red)1;
+                // border-width: 2px;
+                // border-style: solid;
+                text-align: center;
+                margin: 20px;
+                border-radius: 15px;
+                transition: 0.8s;
+
+
+               .content-details{
+                margin: 15px;
+                padding: 15px;
+                span{
+                    background: #1d1c1c;
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    color: white;
+                    margin-right: 10px;
+                }
+
+                h2{
+                    color: rgb(255, 255, 255);
+                }
+               }
+
+               &:hover{
+                transform: translateY(-5%);
+                transition: 0.8s;
+                box-shadow: 0 0 0 3px solid rgb(201, 193, 193);
+                
+               }
+            }
+            .one{
+                background: linear-gradient(#459bcf 0%,#086ca7 100%);
+                color: white;
+            }
+            .two{
+                background: linear-gradient( #319795 0%, #0d6e6b 100%);
+                color: white;
+
+
+            }
+            .Three{
+               background: linear-gradient(#45c8cf 0%,#086ca7 100%);
+               color: white;
+
+
+            }
+            .last{
+                background: transparent;
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                border: 5px solid rgb(39, 39, 39);
+
+                h2{
+                    color: black;
+                }
+            }
+        }
+    }
+}
