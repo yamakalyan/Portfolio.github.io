@@ -7,19 +7,16 @@
 body{
     margin: 0px;
     padding: 0px;
-    // font-family: 'Alegreya Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    // font-family: 'Roboto Mono', monospace;
+    font-family: 'Heebo', sans-serif;
     font-size: 18px;
     scroll-behavior: smooth;
-    width: 100vw;
     background: linear-gradient( rgb(193, 193, 255)0%, rgb(162, 255, 162)100%);
 
     a{
         color: white;
         text-decoration: none;
-        &:hover{
-            color: rgb(149, 149, 230);
-        }
     }
 }
 *{

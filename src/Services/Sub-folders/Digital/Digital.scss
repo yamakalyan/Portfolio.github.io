@@ -1,0 +1,39 @@
+#digital {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // height: 100vh;
+  background: linear-gradient(to right, rgb(234, 234, 253), rgb(130, 130, 255));
+
+  .digital-main {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .heading {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 10px;
+
+      h1 {
+        font-size: 38px;
+        span {
+          color: rgb(59, 207, 59);
+          font-weight: bolder;
+        }
+      }
+    }
+    .content {
+      margin-inline: 25px;
+      padding: 10px;
+
+      span {
+        color: rgb(255, 108, 108);
+        font-weight: 600;
+      }
+    }
+  }
+}

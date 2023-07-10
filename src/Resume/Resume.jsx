@@ -36,7 +36,13 @@ export default function Resume() {
                 <p style={{ color: "blueviolet" }}>Nishitha Degree College.</p>
                 <p>Year of completion: 2022</p>
               </div>
-              <div className="education-box">
+              
+            
+            </div>
+          </div>
+          <div className="right">
+            <div>
+            <div className="education-box">
                 <p style={{ fontWeight: "bold" }}>
                   {" "}
                   Senior Secondary (XII), Science
@@ -44,15 +50,12 @@ export default function Resume() {
                 <p style={{ color: "blueviolet" }}>Vijay Junior College.</p>
                 <p>Year of completion: 2019</p>
               </div>
-              <div className="education-box">
+            <div className="education-box">
                 <p style={{ fontWeight: "bold" }}> Secondary (X)</p>
                 <p style={{ color: "blueviolet" }}>ZPHS school</p>
                 <p>Year of completion: 2016</p>
               </div>
-            </div>
-          </div>
-          <div className="right">
-            <div>
+              
               <h3>Traning</h3>
               <p>
                 Completed comprehensive Web Development course, proficient in

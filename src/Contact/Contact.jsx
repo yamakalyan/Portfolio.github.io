@@ -63,31 +63,31 @@ export default function Contact() {
         </div>
 
       </div>
-      <form onSubmit={handleEmailCall}>
         <div className="forms">
+      <form onSubmit={handleEmailCall}>
         <div  className="email">
             {/* <label>Enter your name</label><br/><br/> */}
-      <input type="text" size="40" onChange={(e)=>setName(e.target.value)} required placeholder="Enter your name"/>
+      <input type="text"  onChange={(e)=>setName(e.target.value)} required placeholder="Enter your name"/>
           </div>
         <div  className="email">
             {/* <label>Enter your Mobile</label><br/><br/> */}
-      <input type="text" size="40" onChange={(e)=>setMobile(e.target.value)} required placeholder="Enter your mobile"/>
+      <input type="text" onChange={(e)=>setMobile(e.target.value)} required placeholder="Enter your mobile"/>
           </div>
         <div  className="email">
             {/* <label>Enter your Email </label><br/><br/> */}
-      <input type="email" size="40" onChange={(e)=>setEmail(e.target.value)} required placeholder="Enter your @gmail"/>
+      <input type="email"  onChange={(e)=>setEmail(e.target.value)} required placeholder="Enter your @gmail"/>
           </div>
     
           <div  className="textarea">
           {/* <label>Enter Message</label><br/><br/> */}
-      <textarea type="text" cols="40" rows="8" required onChange={(e)=>setMessage(e.target.value)} placeholder="Enter your message here"/>
+      <textarea type="text" rows="10" required onChange={(e)=>setMessage(e.target.value)} placeholder="Enter your message here"/>
           </div>
           <div className="btn-div">
       <button type="submit" className={success ? "btn-success" : "btn"}>{ success ? "Success" : "Submit"} </button>
           </div>
-        </div>
-            <p style={{textAlign : "center", color : "#51e86a"}}> {success && "I'll Contact You ASAP"}</p>
       </form>
+            <p style={{textAlign : "center", color : "#51e86a"}}> {success && "I'll Contact You ASAP"}</p>
+        </div>
     </div>
     <div className="contact-list">
       <div className="right">
@@ -111,7 +111,7 @@ export default function Contact() {
           </a>
       </div>
       <div className="left">
-    <p>© Copyright Yama Kalyan. All Rights Reserved</p>
+    <p>© Copyright Yama Kalyan.</p>
       </div>
       </div>
     </div>

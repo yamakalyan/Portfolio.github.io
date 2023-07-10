@@ -1,98 +1,94 @@
-.about{
-    height: auto;
-    // scroll-snap-align: center;
+.about {
+  height: auto;
+  // scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .about-content {
+    max-width: 1400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0%;
 
-    .about-content{
-        max-width: 1400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0%;
+    .about-heading {
+      text-align: center;
+      margin: 0 5px;
+      h1 {
+        font-family: "Bangers", cursive;
+        letter-spacing: 1px;
+        font-weight: 200;
+      }
 
-        .about-heading{
-            text-align: center;
-            margin: 0 5px ;
-            h1{
-                font-family: 'Bangers', cursive;
-                letter-spacing: 1px;
-            font-weight: 200;
-
-
-            }
-
-            p{
-                font-size: 16px;
-                margin: 15px;
-            }
-        }
-
-
-        .about-info{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10%;
-            align-items: center;
-
-            .left{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex: 1 150px;
-                margin: 30px;
-                img{
-                    max-width: 100%;
-                    border-radius: 15px;
-                }
-            }
-
-            .right{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                flex: 2 ;
-                .heading{
-                    display: flex;
-                    justify-content: left;
-                    flex-direction: column;
-                    .info-h4{
-                        font-size: 25px;
-                    }
-                }
-
-                .about-row{
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    .about-ul{
-                        // list-style: none;
-                        list-style-type: circle;
-                        display: flex;
-                        flex-direction: column;
-                        flex-wrap: wrap;
-                        margin: 5px;
-                        max-width: 100%;
-        
-                        li{
-                            font-size: 20px;
-                            letter-spacing: 1px;
-                            margin: 10px;
-
-                        }
-                        .arrow{
-                            transform: rotateX('80deg');
-                            color: red;
-                        }
-                    }
-                }
-                .about-bottom{
-                    font-size: 20px;
-                    color : rgb(162, 255, 162);
-                    text-align: center;
-                }
-            }
-        }
+      p {
+        font-size: 16px;
+        margin: 15px;
+      }
     }
+
+    .about-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10%;
+      align-items: center;
+
+      .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 150px;
+        margin: 30px;
+        img {
+          max-width: 100%;
+          border-radius: 15px;
+        }
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 2;
+        .heading {
+          display: flex;
+          justify-content: left;
+          flex-direction: column;
+          .info-h4 {
+            font-size: 25px;
+          }
+        }
+
+        .about-row {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          .about-ul {
+            // list-style: none;
+            list-style-type: circle;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 5px;
+            max-width: 100%;
+
+            li {
+              font-size: 20px;
+              letter-spacing: 1px;
+              margin: 10px;
+            }
+            .arrow {
+              transform: rotateX("80deg");
+              color: red;
+            }
+          }
+        }
+        .about-bottom {
+          font-size: 20px;
+          color: rgb(162, 255, 162);
+          text-align: center;
+        }
+      }
+    }
+  }
 }

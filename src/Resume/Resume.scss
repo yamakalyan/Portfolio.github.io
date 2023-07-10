@@ -52,15 +52,16 @@
 
     .btn-resume{
         padding: 10px;
-        border: 1px solid blueviolet;
+        background: linear-gradient(rgb(156, 249, 152) 0%, rgb(73, 227, 99) 100%);
         // background: #cfbeff;
+        border: 2px solid rgb(73, 227, 99);
+        transition: 0.8s;
         border-radius: 5px;
         color: rgb(18, 16, 91);
         
         &:hover{
-        border: 1px solid #cfbeff;
-            background: #cfbeff;
-            box-shadow: 0px 1px 1px 1px;
+        background:  rgb(73, 227, 99);
+        transition: 0.8s;
         }
     }
 }

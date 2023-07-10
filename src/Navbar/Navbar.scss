@@ -1,120 +1,138 @@
+header {
+  display: flex;
+  // flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  margin: 0%;
+  background: rgb(22, 22, 23);
+  transition: 1s;
 
-header{
+  .header {
+    width: 1400px;
+    height: 70px;
+    color: rgb(246, 232, 232);
     display: flex;
-    // flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+
+    .logo {
+      margin-left: 2rem;
+      font-family: "Bangers", cursive;
+      letter-spacing: 5px;
+    //   color: rgb(128, 132, 254);
+      span {
+        font-size: 30px;
+        font-weight: bold;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .navbar {
+      .ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-right: 2rem;
+        list-style: none;
+
+        .list {
+          .active {
+            color: white;
+          }
+
+          a {
+            text-decoration: none;
+            color: rgb(236, 223, 223);
+
+            &:hover {
+              color: white;
+            }
+          }
+          .btn-hireme {
+            padding: 10px;
+            border: none;
+            background: linear-gradient(rgb(130, 130, 243) 0%, rgb(50, 50, 196) 100%);
+            border-radius: 3px;
+            color: white;
+            font-weight: bold;
+
+            &:hover {
+              background:  rgb(50, 50, 196);
+              color: white;
+            }
+            @media only screen and (max-width: 768px) {
+            }
+          }
+
+          @media only screen and (max-width: 768px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .bottom-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // position: sticky;
+    top: 0%;
+    transition: 1s;
+    padding: 5px;
+    border-top: 2px solid white;
+
+    .container {
+      width: 1400px;
+      height: 25px;
+      margin: 0;
+      transition: 1s;
+
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+
+        .list {
+          @media only screen and (max-width: 768px) {
+            display: none;
+          }
+        }
+
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: sticky;
     z-index: 1;
+    width: 100%;
     top: 0%;
-    height: 70px;
+    left: 0;
     margin: 0%;
     background: rgb(22, 22, 23);
-
-    .header{
-        width: 1400px;
-        color: rgb(246, 232, 232);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 5px;
-        
-        .logo{
-            margin-left: 2rem;
-            font-family: 'Bangers', cursive;
-                letter-spacing: 5px;
-            span{
-                font-size: 30px;
-                font-weight: bold;
-
-                @media only screen and (max-width:768px) {
-                    font-size: 20px;
-                }
-            }
-        }
-
-        .navbar{
-
-        .ul{
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-right: 2rem;
-            list-style: none;
-
-            .list{
-                .active{
-                    color: white;
-                }
-
-                a{
-                    text-decoration: none;
-                    color: rgb(236, 223, 223);
-
-                    &:hover{
-                        color: white;
-                    }
-                    
-                }
-                .btn-hireme{
-                    padding: 10px;
-                    border: 2px solid rgb(166, 91, 237);
-                    background: transparent;
-                    border-radius: 3px;
-                    color: rgb(166, 91, 237);
-                    font-weight: bold;
-
-                    &:hover{
-                        background: rgb(166, 91, 237);
-                        color: white;
-                    }
-                    @media only screen and (max-width:768px) {
-                       
-                    }
-                    
-                }
-                
-                @media only screen and (max-width:768px) {
-                    display: none;
-                }
-            }
-        }
-            
-    }
-
-    @media only screen and (max-width:768px) {
-        width: 100%;
-    }
-}
-.bottom-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 0%;
-
-
-    .container{
-        width: 1400px;
-        height: 25px;
-        background: #e0d6d6;
-        margin: 0;
-        transition: 1s ease;
-
-
-        ul{
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 0;
-        }
-    }
-    
-    @media only screen and (max-width:768px) {
-        width: 100%;
-    }
-    
-}
-
+    transition: 1s;
+  }
 }
